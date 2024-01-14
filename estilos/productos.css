@@ -1,0 +1,20 @@
+.card {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+h5 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+img {
+    width: 40%;
+}
+
+.busqueda {
+    margin-top: 5px;
+}

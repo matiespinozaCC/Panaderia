@@ -1,0 +1,77 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Producto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="inicio.html">Sistema Panaderia</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="inicio.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Productos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="productos.html">Productos</a></li>
+                            <li><a class="dropdown-item" href="familias.html">Familias</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="crearproducto.html">Crear Producto</a></li>
+                            <li><a class="dropdown-item active" href="crearfamilia.html">Crear Familia</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <h1 class="text-center">Crear nueva familia</h1>
+    <div class="container">
+        <form class="needs-validation" novalidate>
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre de Familia</label>
+                <input type="text" class="form-control" id="nombre" required>
+                <div class="valid-feedback">
+                    El nombre se ve bien!
+                </div>
+                <div class="invalid-feedback">
+                    Debes colocar un nombre!
+                </div>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="confirmar" required>
+                <label class="form-check-label" for="confirmar">Confirmar Familia</label>
+                <div class="valid-feedback">
+                    Familia confirmada!
+                </div>
+                <div class="invalid-feedback">
+                    Debes confirmar la familia!
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Crear Familia</button>
+        </form>
+    </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script type="module" src="../codigo/crearfamilia.js"></script>
+
+</html>
